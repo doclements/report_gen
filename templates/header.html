@@ -5,10 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{data.title}}</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .header {
+            margin : 0 auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header h4 {
+            color:#414141;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        figcaption {
+            color:#414141;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .image_block {
+            display : block;
+            page-break-inside:avoid;
+        }
+        figure.left {
+            width:50%;
+            float:left;
+            padding-right:25px;
+            padding-bottom:40px;
+        
+        }
+        figure.right {
+            width:50%;
+            float:right;
+            padding-left:25px;
+            padding-bottom:40px;
+        
+        }
+        .clear_both {
+            clear:both;
+        }
+        
+        p.image_left {
+            width:40%;
+            float:right;
+            padding-top:30px;
+            text-justify: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p.image_right {
+            width: 40%;
+            float: left;
+            padding-top: 30px;
+            text-justify: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            width :980px;
+            margin : 0 auto;
+        }
+        
+        .footer_center {
+            width:30%;
+            margin: 0 auto;
+        }
+        .paragraph {
+            width:80%;
+            margin: 0 auto;
+            page-break-inside:avoid;
+            
+           
+        }
+        .paragraph p {
+            margin-top:0;
+            margin-bottom:0;
+        }
+        .col_2  {
+            column-count: 2;
+        }
+        .paragraph h5 {
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
+    <div class="header">
     <h1>{{data.title}}</h1>
     {% if data.title %}
         <h4>{{data.subtitle}}</h4>
     {% endif %}
+</div>

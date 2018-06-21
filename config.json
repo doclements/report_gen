@@ -1,18 +1,19 @@
 {
     "report" : {
-        "title" : "A Title",
-        "subtitle" : "a longer subtiotle - can be null",
+        "title" : "Chlorophyll-A summery for 11/11/99 week 22",
+        "subtitle" : "Data shows a high thingam,abob in the north east with increasing concentrations throughoput the period",
         "type" : "hab_report",
         "format" : "template_5",
         "items" : [
             {
                 "type" : "paragraph",
-                "text" : "",
-                "heading" : "a heading - can be null"                 
+                "text" : "Aenean id ante erat. Donec scelerisque, magna id feugiat gravida, neque elit iaculis nibh, eget elementum ante lectus ut odio. Donec at eros cursus, iaculis eros ac, venenatis felis. In hac habitasse platea dictumst. Duis vitae metus laoreet, mattis mauris quis, blandit sem. Nulla sed sem non libero dictum pretium et sed eros. Nulla venenatis odio eget pellentesque euismod. Vivamus tellus velit, ullamcorper finibus aliquet vitae, suscipit quis risus. Aliquam porttitor sodales quam nec lobortis. Aenean pharetra massa sem, et scelerisque erat lobortis sed. Fusce sollicitudin, dolor sed sollicitudin dignissim, odio lorem cursus nibh, a mollis tellus nunc non mi. In nulla mauris, rutrum nec odio at, viverra tempor erat. Fusce pharetra, lacus id lobortis convallis, quam tellus posuere justo, vitae bibendum quam purus id eros. ",
+                "columns" : "2"            
             },
+            
             {
                 "type" : "image",
-                "text" :"some text taht will be displayed with teh image, this is big text like a pragraph not teh caption which is sepreate",
+                "text" :"Curabitur ut elit risus. Quisque ac leo et felis viverra tincidunt. Etiam et augue justo. Proin lacinia, nibh a rhoncus posuere, augue urna tristique sapien, id pellentesque quam nunc id est. Nam commodo turpis sed mollis maximus. Nunc blandit nisi eget nunc facilisis, vitae pharetra enim venenatis. Nam porttitor velit vitae massa imperdiet placerat. Suspendisse laoreet nulla odio, in ullamcorper justo fringilla eget. Integer fringilla est malesuada vulputate commodo. Sed non placerat nibh. Etiam placerat, diam aliquam ultricies ultrices, erat orci venenatis massa, in viverra sapien leo non leo. Quisque luctus viverra leo sit amet rutrum. Donec risus felis, semper sit amet pharetra sit amet, hendrerit a odio. Nullam id purus in arcu varius tempus id at ligula. Nullam semper venenatis urna at fermentum. Morbi venenatis tellus vitae interdum iaculis. ",
                 "caption" : "An awesome igame",
                 "position" : "left",
                 "size" : "medium",
@@ -31,7 +32,7 @@
             },
             {
                 "type" : "image",
-                "text" :"some text taht will be displayed with teh image, this is big text like a pragraph not teh caption which is sepreate",
+                "text" :"Quisque eget volutpat odio. Aliquam congue lacinia dui, ut iaculis nunc accumsan ac. Aenean ornare nibh felis, eget ornare ipsum consequat vel. Etiam mollis in felis vel feugiat. Vestibulum vel dolor elementum, pretium ipsum at, tincidunt ante. Suspendisse potenti. Ut elementum maximus risus, id lacinia lorem consectetur eget. Quisque sollicitudin nec arcu nec eleifend. Fusce bibendum mollis augue eu finibus. Vivamus rutrum volutpat euismod. In ac lectus maximus, ullamcorper ligula eget, bibendum elit. Maecenas ultrices libero vel venenatis interdum. Fusce finibus sapien sit amet metus vulputate auctor. ",
                 "caption" : "An awesome igame",
                 "position" : "right",
                 "size" : "medium",
@@ -49,28 +50,26 @@
                 }
             },
             {
+                "type" : "image",
+                "text" : "Aenean id ante erat. Donec scelerisque, magna id feugiat gravida, neque elit iaculis nibh, eget elementum ante lectus ut odio. Donec at eros cursus, iaculis eros ac, venenatis felis. In hac habitasse platea dictumst. Duis vitae metus laoreet, mattis mauris quis, blandit sem. Nulla sed sem non libero dictum pretium et sed eros. Nulla venenatis odio eget pellentesque euismod. Vivamus tellus velit, ullamcorper finibus aliquet vitae, suscipit quis risus. Aliquam porttitor sodales quam nec lobortis. Aenean pharetra massa sem, et scelerisque erat lobortis sed. Fusce sollicitudin, dolor sed sollicitudin dignissim, odio lorem cursus nibh, a mollis tellus nunc non mi. In nulla mauris",
+                "caption" : " neque elit iaculis nibh",
+                "position" : "left",
+                "size" : "medium",
+                "sourceType" : "imageFile",
+                "source" : {
+                    "filepath" : "bering_bloom_2000.jpg"
+                }
+            },
+            {
+                "type" : "paragraph",
+                "text" : "Aenean id ante erat. Donec scelerisque, magna id feugiat gravida, neque elit iaculis nibh, eget elementum ante lectus ut odio. Donec at eros cursus, iaculis eros ac, venenatis felis. In hac habitasse platea dictumst. Duis vitae metus laoreet, mattis mauris quis, blandit sem. Nulla sed sem non libero dictum pretium et sed eros. Nulla venenatis odio eget pellentesque euismod. Vivamus tellus velit, ullamcorper finibus aliquet vitae, suscipit quis risus. Aliquam porttitor sodales quam nec lobortis. Aenean pharetra massa sem, et scelerisque erat lobortis sed. Fusce sollicitudin, dolor sed sollicitudin dignissim, odio lorem cursus nibh, a mollis tellus nunc non mi. In nulla mauris, rutrum nec odio at, viverra tempor erat. Fusce pharetra, lacus id lobortis convallis, quam tellus posuere justo, vitae bibendum quam purus id eros. ",
+                "heading" : "a heading - can be null"                 
+            },
+            {
                     "type": "break",
                     "width" : "half/full",
                     "colour" : "black/blue/hex maybe",
                     "thickness" : "number of pixels - drag slider in builder ui"
-            },
-            {
-                "type" : "paragraph",
-                "text" : "",
-                "heading" : "a heading - can be null"                 
-            },
-            {
-                "type" : "image",
-                "text" : "",
-                "caption" : "",
-                "position" : "left/center/right",
-                "size" : "small/medium/large/custom <- can be null and drop height and width",
-                "height" : 99,
-                "width" : 99,
-                "sourceType" : "imageFile",
-                "source" : {
-                    "filepath" : ""
-                }
             },
             {
                 "type" : "image",

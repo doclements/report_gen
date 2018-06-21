@@ -24,15 +24,21 @@ def main():
             write_header(data,output,env)
             for item in data['items']:
                 if item['type'] == "image":
+                    print("trying image type %s" % item['sourceType'])
                     try:
                         a = renderers[item['sourceType']](item,dirname,env)
-                        a.generate()
                         output.write(a.render())
-                    except:
+                    except Exception as e:
+                        #print(dir(e))
                         pass
+                if item['type'] == "paragraph":
+                    if 'heading' not in item:
+                        item['heading'] = None
+                    output.write(env.get_template('paragraph.html').render(data=item))
+                
             write_footer(data['footer'],output,env)
-            pdfkit.from_file("./index.html", 'webpage.pdf')
-
+            
+    pdfkit.from_file("./index.html", 'webpage.pdf')
 
     # with open('wms_test.json') as json_data_file:
     #     data = json.load(json_data_file)

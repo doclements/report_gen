@@ -13,7 +13,6 @@ class wmsImage(object):
         self.dirname = dirname
         self.filename = '%s.png'%str(uuid.uuid4())
         self.fullPath = os.path.join(self.dirname,self.filename)
-        self.template = "wms"
         self.caption = self.conditionalAdd(data['caption'])
         self.text = self.conditionalAdd(data['text'])
         self.size = data['size']
@@ -55,6 +54,7 @@ class wmsImage(object):
         return self.fullPath
 
     def render(self):
+        self.generate()
         return self.template_env.get_template('image.html').render(data=self)
     
     def conditionalAdd(self,item):
