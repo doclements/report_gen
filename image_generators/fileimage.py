@@ -17,11 +17,11 @@ class fileImage(object):
             self.height = data['height']
             self.width = data['width']
         elif self.size == "small":
-            self.height = 300
+            self.width = 300
         elif self.size == "medium":
-            self.height = 450
+            self.width = 450
         elif self.size == "large":
-            self.height = 600
+            self.width = 600
         self.source = data['source']
         self.fullPath = self.source['filepath']
     def generate(self):
