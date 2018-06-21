@@ -1,0 +1,147 @@
+{
+    "report" : {
+        "title" : "A Title",
+        "subtitle" : "a longer subtiotle - can be null",
+        "type" : "hab_report",
+        "format" : "template_5",
+        "items" : [
+            {
+                "type" : "paragraph",
+                "text" : "",
+                "heading" : "a heading - can be null"                 
+            },
+            {
+                "type" : "image",
+                "text" :"some text taht will be displayed with teh image, this is big text like a pragraph not teh caption which is sepreate",
+                "caption" : "An awesome igame",
+                "position" : "left",
+                "size" : "medium",
+                "sourceType" : "wms",
+                "source" : {
+                    "serverUrl" : "https://www.oceancolour.org/thredds/wms/CCI_ALL-v3.1-MONTHLY?",
+                    "serverVersion" : "1.1.1",
+                    "srs" : "EPSG:4326",
+                    "layer" : "chlor_a",
+                    "lat" : [30,80],
+                    "lon" : [-30,20],
+                    "palette" : "boxfill/cci_blue_red",
+                    "time" : "2016-06-01T00:00:00.000Z"
+            
+                }
+            },
+            {
+                "type" : "image",
+                "text" :"some text taht will be displayed with teh image, this is big text like a pragraph not teh caption which is sepreate",
+                "caption" : "An awesome igame",
+                "position" : "right",
+                "size" : "medium",
+                "sourceType" : "wms",
+                "source" : {
+                    "serverUrl" : "https://www.oceancolour.org/thredds/wms/CCI_ALL-v3.1-MONTHLY?",
+                    "serverVersion" : "1.1.1",
+                    "srs" : "EPSG:4326",
+                    "layer" : "chlor_a",
+                    "lat" : [30,80],
+                    "lon" : [-30,20],
+                    "palette" : "boxfill/cci_blue_red",
+                    "time" : "2014-06-01T00:00:00.000Z"
+            
+                }
+            },
+            {
+                    "type": "break",
+                    "width" : "half/full",
+                    "colour" : "black/blue/hex maybe",
+                    "thickness" : "number of pixels - drag slider in builder ui"
+            },
+            {
+                "type" : "paragraph",
+                "text" : "",
+                "heading" : "a heading - can be null"                 
+            },
+            {
+                "type" : "image",
+                "text" : "",
+                "caption" : "",
+                "position" : "left/center/right",
+                "size" : "small/medium/large/custom <- can be null and drop height and width",
+                "height" : 99,
+                "width" : 99,
+                "sourceType" : "imageFile",
+                "source" : {
+                    "filepath" : ""
+                }
+            },
+            {
+                "type" : "image",
+                "text" : "",
+                "caption" : "",
+                "position" : "left/center/right",
+                "size" : "small/medium/large/custom <- can be null and drop height and width",
+                "height" : 99,
+                "width" : 99,
+                "sourceType" : "plot",
+                "source" : {
+                    "plot_config" : "hash used for a plot that is stored, we then gen a png and include in report  -  limited to our plotting for now"
+                }
+            },
+            {
+                "type" : "image",
+                "text" : "",
+                "caption" : "",
+                "position" : "left/center/right",
+                "size" : "small/medium/large/custom <- can be null and drop height and width",
+                "height" : 99,
+                "width" : 99,
+                "sourceType" : "url",
+                "source" : {
+                    "url" : "url of image"
+                }
+            },
+            {
+                "type" : "image",
+                "text" : "",
+                "caption" : "",
+                "position" : "left/center/right",
+                "size" : "small/medium/large/custom <- can be null and drop height and width",
+                "height" : 99,
+                "width" : 99,
+                "sourceType" : "netcdfFile",
+                "source" : {
+                    "filepath" : "",
+                    "variable" : "",
+                    "subset" : true,
+                    "lat" : "if sibset true",
+                    "lon" : "if subset true",
+                    "palette" : "mpl or similar palette list"
+
+                }
+            },
+            {
+                "type" : "image",
+                "text" : "",
+                "caption" : "",
+                "position" : "left/center/right",
+                "size" : "small/medium/large/custom <- can be null and drop height and width",
+                "height" : 99,
+                "width" : 99,
+                "sourceType" : "pmlProcessing - a custom class plugin style actually runs some code to gen an image on grid or somewhere  - limited to pml stuff for now but could be extended to wps ??",
+                "source" : {
+                   "processName" : ""
+
+                }
+            }
+        ],
+        "footer" : {
+            "text" : "copyright blah",
+            "position": "center"
+        },
+        "recurring" : true,
+        "runTimes" : {
+            "type" : "daily/weekly/monthly/customPeriod",
+            "time" : "hour of day/day of week/ day of month/"
+        },
+        "alertWhenDone" : true
+
+    }
+}

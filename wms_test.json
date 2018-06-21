@@ -1,0 +1,19 @@
+{
+    "type" : "image",
+    "text" :"some text taht will be displayed with teh image, this is big text like a pragraph not teh caption which is sepreate",
+    "caption" : "An awesome igame",
+    "position" : "left/center/right",
+    "size" : "medium",
+    "sourceType" : "wms",
+    "source" : {
+        "serverUrl" : "https://www.oceancolour.org/thredds/wms/CCI_ALL-v3.1-MONTHLY?",
+        "serverVersion" : "1.1.1",
+        "srs" : "EPSG:4326",
+        "layer" : "chlor_a",
+        "lat" : [30,80],
+        "lon" : [-30,20],
+        "palette" : "boxfill/cci_blue_red",
+        "time" : "2016-06-01T00:00:00.000Z"
+
+    }
+}

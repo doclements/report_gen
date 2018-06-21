@@ -1,0 +1,12 @@
+<div class="image_block">
+<figure>
+    <img src="{{data.fullPath}}" alt="" height="{{data.height}}" width="{{data.width}}" class="{{data.position}}" />
+{% if data.caption %}
+    <figcaption class="caption">{{data.caption}}</figcaption>
+{% endif %}
+</figure>
+{% if data.text %}
+    <p class="text image_{{data.position}}">{{data.text}}</p>
+{% endif %}
+</div>
+
